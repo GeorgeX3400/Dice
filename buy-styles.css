@@ -1,0 +1,27 @@
+body {
+    background-color: chocolate;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2vw;
+    color:aliceblue;
+}
+
+a {
+    color:blue;
+    text-decoration: none;
+}
+li {
+    padding-bottom: 1vh;
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+ol {
+    background-color: rgb(228, 167, 13);
+    border: 1vh solid rgb(203, 134, 5);
+    border-radius: 2vh;
+    padding:1vh 4vh;
+}
+p {
+    line-height: 3vh;
+}
+

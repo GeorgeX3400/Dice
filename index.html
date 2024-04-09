@@ -7,13 +7,58 @@
     <title>Dice</title>
 </head>
 <body>
-    <select>
-        <option><a href="history.html">History</a></option>
-        <option><a href="about.html">About</a></option>
-        <option><a href="buy.html">Buy</a></option>
-    </select>
-    <h1>Dice</h1>
-    <div class = "dice"></div>
+    <div class="menu">
+        <span>More</span>
+        <div class="hovered-menu">
+            <a href="history.html">History</a>
+            <a href="buy.html">Buy</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    <h1>Roll the Dice!</h1>
+    <div id = "dice">
+        <div class = "front">
+            <span></span>
+            
+        </div>
+        <div class = "back">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class = "left">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class = "right">
+            <span></span>
+            <span></span>
+
+        </div>
+        <div class = "top">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        <div class = "bottom">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+    </div>
     
+    <section id="button">
+        Press to roll
+    </section>
+    <script src = "buttonScript.js"></script>
 </body>
 </html>
