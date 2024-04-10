@@ -11,6 +11,11 @@ h1 {
 
 }
 
+span {
+    background-color: #773c06;
+    margin: 0;
+}
+
 #dice {
     width: 20vh;
     height: 20vh;
@@ -18,7 +23,7 @@ h1 {
     transform: rotateX(45deg) rotateZ(45deg);  
     position:absolute;
     top:40vh;
-    left: 42vw;
+
     animation-name: rotation;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -167,21 +172,22 @@ div > div > span {
 .menu > span {
     right:5vw;
     position:absolute;
-
+    
+        padding:1vh 1vw;
 }
 
 
 .hovered-menu {
     display: none;
     position:absolute;
-    top:9vh;
+    top:10vh;
     right: 5vw;
     background-color: #fb8a20;
     
     z-index: 1;
 }
 .hovered-menu a {
-    padding: 1vh 1vw;
+    padding: 1em 0.5em;
     display:block;
     border: 1px solid #773c06;
     color:#f6ba04;
@@ -209,7 +215,7 @@ div > div > span {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    font-size: 1.2em;
     border: 1vh solid rgb(241, 4, 4);
     border-radius: 1vh;
 }
@@ -220,7 +226,7 @@ div > div > span {
 #button:active {
     background-color: rgb(220, 255, 47);
     border-color: rgb(249, 245, 9);
-    color: black;
+    color: rgb(17, 8, 101);
 }
 
 
@@ -421,3 +427,24 @@ div > div > span {
         transform: rotateX(45deg) rotateZ(45deg);
     } 
 }
+
+
+
+@media screen and (max-width: 1000px){
+    #dice {
+        left: 40vw;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    #dice {
+        left: 30vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #dice {
+        left: 45vw;
+    }
+}
+
